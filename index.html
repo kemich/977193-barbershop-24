@@ -8,122 +8,149 @@
 
 <body>
   <header class='main-header'>
-    <nav class='main-nav'>
-
-      <a class='logo'><img src='img/logo/index-logo.svg' alt='Барбершоп «Бородинский»' width='371' height='155'></a>
-
-      <ul class='main-menu-items'>
-        <li class='main-menu-item'><a href='info.html'>Информация</a></li>
-        <li class='main-menu-item'><a href='news.html'>Новости</a></li>
-        <li class='main-menu-item'><a href='pricelist.html'>Прайс лист</a></li>
-        <li class='main-menu-item'><a href='catalog.html'>Магазин</a></li>
-        <li class='main-menu-item'><a href='contacts.html'>Контакты</a></li>
+    <nav class='main-header__nav main-nav'>
+      <a class='main-nav__index-logo index-logo'><img class='index-logo__img' src='img/logo/index-logo.svg' alt='Барбершоп «Бородинский»' width='371' height='155'></a>
+      <ul class='main-nav__main-menu-list'>
+        <li class='main-nav__main-menu-item main-menu-item'>
+          <a class='main-menu-item__link' href='info.html'>Информация</a>
+        </li>
+        <li class='main-nav__main-menu-item main-menu-item'>
+          <a class='main-menu-item__link' href='news.html'>Новости</a>
+        </li>
+        <li class='main-nav__main-menu-item main-menu-item'>
+          <a class='main-menu-item__link' href='pricelist.html'>Прайс лист</a>
+        </li>
+        <li class='main-nav__main-menu-item main-menu-item'>
+          <a class='main-menu-item__link' href='catalog.html'>Магазин</a>
+        </li>
+        <li class='main-nav__main-menu-item main-menu-item'>
+          <a class='main-menu-item__link' href='contacts.html'>Контакты</a>
+        </li>
       </ul>
-      <ul class='service-menu-items'>
-        <li class='service-menu-item'><a href='user.html'>Вход</a></li>
+      <ul class='main-nav__service-menu-list'>
+        <li class='main-nav__service-menu-item service-menu-item'>
+          <a class='service-menu-item__link' href='user.html'>Вход</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main class='main-content'>
 
-    <h1 style="visibility: hidden">Барбершоп «Бородинский»</h1>
-    <section class='benefits'>
-      <h2 class='benefits-title'>Наши преимущества</h2>
-      <ul class='benefits-items'>
-        <li class='benefits-item'>
-          <h3>Быстро</h3>
-          <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+    <h1 class='main-content__title visually-hidden'>Барбершоп «Бородинский»</h1>
+    <section class='main-content__benefits benefits'>
+      <h2 class='benefits__title'>Наши преимущества</h2>
+      <ul class='benefits__list'>
+        <li class='benefits__item benefits-item'>
+          <h3 class='benefits-item__title'>Быстро</h3>
+          <p class='benefits-item__description'>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
         </li>
-        <li class='benefits-item'>
-          <h3>Круто</h3>
-          <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+        <li class='benefits__item benefits-item'>
+          <h3 class='benefits-item__title'>Круто</h3>
+          <p class='benefits-item__description'>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
         </li>
-        <li class='benefits-item'>
-          <h3>Дорого</h3>
-          <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+        <li class='benefits__item benefits-item'>
+          <h3 class='benefits-item__title'>Дорого</h3>
+          <p class='benefits-item__description'>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
         </li>
       </ul>
     </section>
-    <section class='news'>
-      <h2 class='news-title'>Новости</h2>
-      <ul class='news-items'>
-        <li class='news-item'>
-          <p class='news-preview'>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+    <section class='main-content__news news'>
+      <h2 class='news__title'>Новости</h2>
+      <ul class='news__list'>
+        <li class='news__item news-item'>
+          <p class='news-item__preview'>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
           </p>
-          <time class='news-time' datetime="2018-01-11">11 января</time>
+          <time class='news-item__time' datetime='2018-01-11'>11 января</time>
         </li>
-        <li class='news-item'>
-          <p class='news-preview'>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-          <time class='news-time' datetime="2018-01-18">18 января</time>
+        <li class='news__item news-item'>
+          <p class='news-item__preview'>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+          <time class='news-item__time' datetime='2018-01-18'>18 января</time>
         </li>
-        <a href="news.html" class='button news-all-button'>Все новости</a>
+        <a href='news.html' class='button news-all-button'>Все новости</a>
       </ul>
     </section>
-    <section class='gallery'>
-      <h2 class='photogallery'>Фотогалерея</h2>
-      <figure class="gallery-content">
-        <a href="#"><img src="img/gallery/gallery-img-1.jpg" width="286" height="164" alt="Интерьер"></a>
+    <section class='main-content__gallery gallery'>
+      <h2 class='gallery__title'>Фотогалерея</h2>
+      <figure class='gallery__content gallery-content'>
+        <a class='gallery-content__link gallery-content-link' href='#'>
+          <img class='gallery-content-link__img' src='img/gallery/gallery-img-1.jpg' width='286' height='164' alt='Интерьер'>
+        </a>
       </figure>
-      <span class="button gallery-button gallery-button-back">Назад</span>
-      <span class="button gallery-button gallery-button-next">Вперед</span>
+      <span class='button gallery__button gallery__button-back'>Назад</span>
+      <span class='button gallery__button gallery__button-forward'>Вперед</span>
     </section>
-    <section class='contacts'>
-      <h2>Контактная информация</h2>
-      <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+    <section class='main-content__contacts contacts'>
+      <h2 class='contacts__title'>Контактная информация</h2>
+      <p class='contacts__description'>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
         АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
         ТЕЛЕФОН: +7 (495) 666-02-66</p>
-      <p>ВРЕМЯ РАБОТЫ:<br>
+      <p class='contacts__worktime'>ВРЕМЯ РАБОТЫ:<br>
         ПН—ПТ: С 10:00 ДО 22:00<br>
         СБ—ВС: С 10:00 ДО 19:00</p>
-      <a class="button" href="map.html">Как проехать</a>
-      <a class="button" href="contacts.html">Обратная связь</a>
+      <a class='button contacts__button contacts__button-map' href='map.html'>Как проехать</a>
+      <a class='button contacts__button contacts__button-feedback' href='contacts.html'>Обратная связь</a>
     </section>
-    <section class='make-order'>
-      <h2>Записаться</h2>
-      <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-      <form action="">
-        <label for="date">Дата</label>
-        <input id='date' type="date" name='date'>
-        <label for="time">Время</label>
-        <input id='time' type="time" name='time'>
-        <label for="name">Ваше имя</label>
-        <input id='name' type="text" name='name'>
-        <label for="phone">Телефон</label>
-        <input id='phone' type="phone" name='phone'>
-        <input type="submit" value="Записаться">
+    <section class='main-content__make-order make-order'>
+      <h2 class='make-order__title'>Записаться</h2>
+      <p class='make-order__description'>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+      <form class='make-order__form make-order-form' action=''>
+        <label class='label make-order-form__label make-order-form__label-date' for='date'>Дата</label>
+        <input class='input make-order-form__input make-order-form__input-date' id='date' type='date' name='date'>
+        <label class='label make-order-form__label make-order-form__label-time' for='time'>Время</label>
+        <input class='input make-order-form__input make-order-form__input-time' id='time' type='time' name='time'>
+        <label class='label make-order-form__label make-order-form__label-name' for='name'>Ваше имя</label>
+        <input class='input make-order-form__input make-order-form__input-name' id='name' type='text' name='name'>
+        <label class='label make-order-form__label make-order-form__label-phone' for='phone'>Телефон</label>
+        <input class='input make-order-form__input make-order-form__input-phone' id='phone' type='phone' name='phone'>
+        <button class='button make-order-form__button make-order-form__button-submit' type='submit'>Записаться</button>
       </form>
     </section>
 
   </main>
   <footer class='main-footer'>
-    <p class='contacts'>
+    <p class='main-footer__contacts contacts'>
       Барбершоп «Бородинский»<br>
       Адрес: г. Санкт-Петербург, ул Б. Конюшенная, д. 19/<br>
-      <a href='map.html'>Как нас найти?</a><br>
+      <a class='contacts__link' href='map.html'>Как нас найти?</a><br>
       Телефон: +7 (495) 666-02-66
     </p>
-    <div class='socials'>
-      <b class='socials-title'>Давайте дружить!</b>
-      <ul class='socials-items'>
-        <li class='socials-item'><a href='#' target='_blank'><img src="img/icons/vk.svg" alt="Мы в VK" width='27' height='15'><span>VK</span></a></li>
-        <li class='socials-item'><a href='#' target='_blank'><img src="img/icons/facebook.svg" alt="Мы в VK" width='27' height='15'><span>Facebook</span></a></li>
-        <li class='socials-item'><a href='#' target='_blank'><img src="img/icons/instagram.svg" alt="Мы в VK" width='27' height='15'><span>Instargam</span></a></li>
+    <div class='main-footer__socials socials'>
+      <b class='socials__title'>Давайте дружить!</b>
+      <ul class='socials__list'>
+        <li class='socials__item socials-item'>
+          <a class='socials-item__link socials-item-link' href='#' target='_blank'>
+            <img class='socials-item-link__img' src='img/icons/vk.svg' alt='Мы в VK' width='27' height='15'>
+            <span class='socials-item-link__title'>VK</span>
+          </a>
+        </li>
+        <li class='socials__item socials-item'>
+          <a class='socials-item__link socials-item-link' href='#' target='_blank'>
+            <img class='socials-item-link__img' src='img/icons/facebook.svg' alt='Мы в VK' width='27' height='15'>
+            <span class='socials-item-link__title'>Facebook</span>
+          </a>
+        </li>
+        <li class='socials__item socials-item'>
+          <a class='socials-item__link socials-item-link' href='#' target='_blank'>
+            <img class='socials-item-link__img' src='img/icons/instagram.svg' alt='Мы в VK' width='27' height='15'>
+            <span class='socials-item-link__title'>Instargam</span>
+          </a>
+        </li>
       </ul>
     </div>
-    <p class='develop'>
-      <b class='develop-title'>Разработано:</b>
-      <a class='develop-link' href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'>html academy</a>
+    <p class='main-footer__develop-info develop-info'>
+      <b class='develop-info__title'>Разработано:</b>
+      <a class='develop-info__link' href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'>html academy</a>
     </p>
   </footer>
   <section class='modal modal-login'>
-    <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
+    <h2 class='modal__title'>Личный кабинет</h2>
+    <p class='modal__description'>Введите свой логин и пароль.</p>
     <!-- Здесь будет форма -->
-    <span class='modal-close'>x</span>
+    <span class='modal__close'>x</span>
   </section>
-  <section class="modal modal-map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
+  <section class='modal modal-map'>
+    <h2 class='modal__title visually-hidden'>Как до нас добраться</h2>
+    <span class='modal__close'>x</span>
   </section>
 </body>
 

@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
-  </head>
-  <body>
+<html lang='ru'>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset='utf-8'>
+  <title>Прайс-лист</title>
+</head>
 
-  </body>
+<body>
+  <header class='main-header'>
+    <nav class='main-nav'>
+
+      <a class='logo' href='/'><img src='img/logo/logo.svg' alt='Барбершоп «Бородинский»' width='111' height='24'></a>
+
+      <ul class='main-menu-items'>
+        <li class='main-menu-item'><a href='info.html'>Информация</a></li>
+        <li class='main-menu-item'><a href='news.html'>Новости</a></li>
+        <li class='main-menu-item main-menu-item-current'><a href='pricelist.html'>Прайс лист</a></li>
+        <li class='main-menu-item'><a href='catalog.html'>Магазин</a></li>
+        <li class='main-menu-item'><a href='contacts.html'>Контакты</a></li>
+      </ul>
+      <ul class='service-menu-items'>
+        <li class='service-menu-item'><a href='user.html'>Вход</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class='main-content'>
+    <section class='bredcrumbs'>
+      <ul class='bredcrumbs-items'>
+        <li class='bredcrumbs-item'><a href='/'>Главная</a></li>
+        <li class='bredcrumbs-item braedcrumbs-item-current'>Прайс-лист</li>
+      </ul>
+    </section>
+    <h1 class='title'>Прайс-лист</h1>
+    <section class='pricelist'>
+      <h2 class='pricelist-title'>ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+
+      <h3><span>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО </span><span>ЛУЧШИЕ СРЕДСТВА:</span></h3>
+      <ul>
+        <li>Baxter of California</li>
+        <li>Mr Natty</li>
+        <li>Suavecito</li>
+        <li>Malin+Goetz</li>
+      </ul>
+      <h3><span>ЦЕНЫ НА УСЛУГИ </span><span>НАШИХ МАСТЕРОВ:</span></h3>
+      <dl>
+        <dt>СТРИЖКА</dt>
+        <dd>1500 ₽</dd>
+        <dt>СТРИЖКА БОРОДЫ</dt>
+        <dd>500 ₽</dd>
+        <dt>НАКРУТКА УСОВ</dt>
+        <dd>350 ₽</dd>
+      </dl>
+      <h3>НЕСКОЛЬКО СЛОВ О НАС:</h3>
+      <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+      <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+    </section>
+
+  </main>
+  <footer class='main-footer'>
+    <p class='contacts'>
+      Барбершоп «Бородинский»<br>
+      Адрес: г. Санкт-Петербург, ул Б. Конюшенная, д. 19/<br>
+      <a href='map.html'>Как нас найти?</a><br>
+      Телефон: +7 (495) 666-02-66
+    </p>
+    <div class='socials'>
+      <b class='socials-title'>Давайте дружить!</b>
+      <ul class='socials-items'>
+        <li class='socials-item'><a href='#' target='_blank'><img src="img/icons/vk.svg" alt="Мы в VK" width='27' height='15'><span>VK</span></a></li>
+        <li class='socials-item'><a href='#' target='_blank'><img src="img/icons/facebook.svg" alt="Мы в VK" width='27' height='15'><span>Facebook</span></a></li>
+        <li class='socials-item'><a href='#' target='_blank'><img src="img/icons/instagram.svg" alt="Мы в VK" width='27' height='15'><span>Instargam</span></a></li>
+      </ul>
+    </div>
+    <p class='develop'>
+      <b class='develop-title'>Разработано:</b>
+      <a class='develop-link' href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'>html academy</a>
+    </p>
+  </footer>
+  <section class='modal modal-login'>
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <!-- Здесь будет форма -->
+    <span class='modal-close'>x</span>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <span class="modal-close">x</span>
+  </section>
+</body>
+
 </html>

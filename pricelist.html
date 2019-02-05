@@ -1,127 +1,118 @@
 <!DOCTYPE html>
-<html lang='ru'>
+<html lang="ru">
 
 <head>
-  <meta charset='utf-8'>
+  <meta charset="utf-8">
   <title>Прайс-лист</title>
 </head>
 
 <body>
-  <header class='main-header'>
-    <nav class='main-header__nav main-nav'>
-      <a class='main-nav__logo logo' href='index.html'>
-        <img class='logo__img' src='img/logo/logo.svg' alt='Барбершоп «Бородинский»' width='111' height='24'>
+  <header class="site-header">
+    <nav class="site-header__main-nav main-nav">
+      <a class="main-nav__logo logo" href="index.html">
+        <img class="logo__img" src="img/logo/logo.svg" alt="Логотип барбершопа «Бородинский»" width="111" height="24">
       </a>
-      <ul class='main-nav__main-menu-list'>
-        <li class='main-nav__main-menu-item main-menu-item'>
-          <a class='main-menu-item__link' href='info.html'>Информация</a>
+      <ul class="site-header__main-menu main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="info.html">Информация</a>
         </li>
-        <li class='main-nav__main-menu-item main-menu-item'>
-          <a class='main-menu-item__link' href='news.html'>Новости</a>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="news.html">Новости</a>
         </li>
-        <li class='main-nav__main-menu-item main-menu-item main-menu-item-current'>
-          <a class='main-menu-item__link' href='pricelist.html'>Прайс лист</a>
+        <li class="main-menu__item main-menu__item--current">
+          <a class="main-menu__link" href="pricelist.html">Прайс лист</a>
         </li>
-        <li class='main-nav__main-menu-item main-menu-item'>
-          <a class='main-menu-item__link' href='catalog.html'>Магазин</a>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="catalog.html">Магазин</a>
         </li>
-        <li class='main-nav__main-menu-item main-menu-item'>
-          <a class='main-menu-item__link' href='contacts.html'>Контакты</a>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="contacts.html">Контакты</a>
         </li>
       </ul>
-      <ul class='main-nav__service-menu-list'>
-        <li class='main-nav__service-menu-item service-menu-item'>
-          <a class='service-menu-item__link' href='user.html'>Вход</a>
+      <ul class="site-header__service-menu service-menu">
+        <li class="service-menu__item">
+          <a class="service-menu__link" href="user.html">Вход</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class='main-content'>
-    <section class='main-content__bredcrumbs bredcrumbs'>
-      <ul class='bredcrumbs__list'>
-        <li class='bredcrumbs__item bredcrumbs-item'>
-          <a class='bredcrumbs-item__link' href='/'>Главная</a>
+  <main class="site-content">
+    <section class="site-content__bredcrumbs bredcrumbs">
+      <ul class="bredcrumbs__list">
+        <li class="bredcrumbs__item">
+          <a class="bredcrumbs__link" href="/">Главная</a>
         </li>
-        <li class='bredcrumbs__item bredcrumbs-item braedcrumbs-item-current'>
-          <a class='bredcrumbs-item__link'>Прайс-лист</a>
+        <li class="bredcrumbs__item bredcrumbs__item--current">
+          <a class="bredcrumbs__link">Прайс-лист</a>
         </li>
       </ul>
     </section>
-    <h1 class='main-content__title'>Прайс-лист</h1>
-    <section class='main-content__pricelist pricelist'>
-      <h2 class='pricelist__title'>ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
-      <div class='pricelist__section section'>
-        <h3 class='section__title'><span>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО </span><span>ЛУЧШИЕ СРЕДСТВА:</span></h3>
-        <ul class='section__list'>
-          <li class='section__item'>Baxter of California</li>
-          <li class='section__item'>Mr Natty</li>
-          <li class='section__item'>Suavecito</li>
-          <li class='section__item'>Malin+Goetz</li>
+    <section class="site-content__pricelist pricelist">
+      <h1 class="site-content__title">Прайс-лист</h1>
+
+      <h2 class="pricelist__title">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+      <section class="pricelist__section section">
+        <h3 class="section__title"><span>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО </span><span>ЛУЧШИЕ СРЕДСТВА:</span></h3>
+        <ul class="section__list">
+          <li class="section__item">Baxter of California</li>
+          <li class="section__item">Mr Natty</li>
+          <li class="section__item">Suavecito</li>
+          <li class="section__item">Malin+Goetz</li>
         </ul>
-      </div>
-      <div class='pricelist__section section'>
-        <h3 class='section__title'><span>ЦЕНЫ НА УСЛУГИ </span><span>НАШИХ МАСТЕРОВ:</span></h3>
-        <dl class='section__dl dl'>
-          <dt class='dl__dt'>СТРИЖКА</dt>
-          <dd class='dl__dd'>1500 ₽</dd>
-          <dt class='dl__dt'>СТРИЖКА БОРОДЫ</dt>
-          <dd class='dl__dd'>500 ₽</dd>
-          <dt class='dl__dt'>НАКРУТКА УСОВ</dt>
-          <dd class='dl__dd'>350 ₽</dd>
+      </section>
+      <section class="pricelist__section section">
+        <h3 class="section__title"><span>ЦЕНЫ НА УСЛУГИ </span><span>НАШИХ МАСТЕРОВ:</span></h3>
+        <dl class="section__dl-list">
+          <dt class="section__dl-title">СТРИЖКА</dt>
+          <dd class="section__dl-value">1500 ₽</dd>
+          <dt class="section__dl-title">СТРИЖКА БОРОДЫ</dt>
+          <dd class="section__dl-value">500 ₽</dd>
+          <dt class="section__dl-title">НАКРУТКА УСОВ</dt>
+          <dd class="section__dl-value">350 ₽</dd>
         </dl>
-      </div>
-      <div class='pricelist__section section'>
-        <h3 class='section__title'>НЕСКОЛЬКО СЛОВ О НАС:</h3>
-        <p class='section__description'>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-        <p class='section__description'>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
-      </div>
+      </section>
+      <section class="pricelist__section section">
+        <h3 class="section__title">НЕСКОЛЬКО СЛОВ О НАС:</h3>
+        <p class="section__description">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+        <p class="section__description">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+      </section>
     </section>
   </main>
-  <footer class='main-footer'>
-    <p class='main-footer__contacts contacts'>
+  <footer class="site-footer">
+    <p class="site-footer__contacts contacts">
       Барбершоп «Бородинский»<br>
       Адрес: г. Санкт-Петербург, ул Б. Конюшенная, д. 19/<br>
-      <a class='contacts__link' href='map.html'>Как нас найти?</a><br>
+      <a class="contacts__link" href="map.html">Как нас найти?</a><br>
       Телефон: +7 (495) 666-02-66
     </p>
-    <div class='main-footer__socials socials'>
-      <b class='socials__title'>Давайте дружить!</b>
-      <ul class='socials__list'>
-        <li class='socials__item socials-item'>
-          <a class='socials-item__link socials-item-link' href='#' target='_blank'>
-            <img class='socials-item-link__img' src='img/icons/vk.svg' alt='Мы в VK' width='27' height='15'>
-            <span class='socials-item-link__title'>VK</span>
+    <div class="site-footer__socials socials">
+      <b class="socials__title">Давайте дружить!</b>
+      <ul class="socials__list">
+        <li class="socials__item ">
+          <a class="socials__link" href="#" target="_blank">
+            <img class="socials__img" src="img/icons/vk.svg" alt="Мы в VK" width="27" height="15">
+            <span class="visually-hidden">VK</span>
           </a>
         </li>
-        <li class='socials__item socials-item'>
-          <a class='socials-item__link socials-item-link' href='#' target='_blank'>
-            <img class='socials-item-link__img' src='img/icons/facebook.svg' alt='Мы в VK' width='27' height='15'>
-            <span class='socials-item-link__title'>Facebook</span>
+        <li class="socials__item">
+          <a class="socials__link" href="#" target="_blank">
+            <img class="socials__img" src="img/icons/facebook.svg" alt="Мы в VK" width="27" height="15">
+            <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class='socials__item socials-item'>
-          <a class='socials-item__link socials-item-link' href='#' target='_blank'>
-            <img class='socials-item-link__img' src='img/icons/instagram.svg' alt='Мы в VK' width='27' height='15'>
-            <span class='socials-item-link__title'>Instargam</span>
+        <li class="socials__item">
+          <a class="socials__link" href="#" target="_blank">
+            <img class="socials__img" src="img/icons/instagram.svg" alt="Мы в VK" width="27" height="15">
+            <span class="visually-hidden">Instargam</span>
           </a>
         </li>
       </ul>
     </div>
-    <p class='main-footer__develop-info develop-info'>
-      <b class='develop-info__title'>Разработано:</b>
-      <a class='develop-info__link' href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'>html academy</a>
+    <p class="site-footer__develop-info develop-info">
+      <b class="develop-info__title">Разработано:</b>
+      <a class="develop-info__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>
     </p>
   </footer>
-  <section class='modal modal-login'>
-    <h2 class='modal__title'>Личный кабинет</h2>
-    <p class='modal__description'>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
-    <span class='modal__close'>x</span>
-  </section>
-  <section class='modal modal-map'>
-    <h2 class='modal__title visually-hidden'>Как до нас добраться</h2>
-    <span class='modal__close'>x</span>
-  </section>
 </body>
 
 </html>

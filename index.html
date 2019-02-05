@@ -4,12 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Барбершоп</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="site-header">
     <nav class="site-header__main-nav main-nav">
-      <a class="main-nav__logo logo logo--index">
+      <a class="site-header__logo logo logo--index">
         <img class="logo__img" src="img/logo/logo.svg" alt="Логотип барбершопа «Бородинский»" width="371" height="155">
       </a>
       <ul class="site-header__main-menu main-menu">
@@ -42,71 +45,76 @@
     <section class="site-content__benefits benefits">
       <h2 class="benefits__title visually-hidden">Наши преимущества</h2>
       <ul class="benefits__list">
-        <li class="benefits__item benefits-item">
-          <h3 class="benefits-item__title">Быстро</h3>
-          <p class="benefits-item__descr">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+        <li class="benefits__item">
+          <h3 class="benefits__item-title">Быстро</h3>
+          <p class="benefits__item-descr">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
         </li>
-        <li class="benefits__item benefits-item">
-          <h3 class="benefits-item__title">Круто</h3>
-          <p class="benefits-item__descr">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+        <li class="benefits__item">
+          <h3 class="benefits__item-title">Круто</h3>
+          <p class="benefits__item-descr">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
         </li>
-        <li class="benefits__item benefits-item">
-          <h3 class="benefits-item__title">Дорого</h3>
-          <p class="benefits-item__descr">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+        <li class="benefits__item">
+          <h3 class="benefits__item-title">Дорого</h3>
+          <p class="benefits__item-descr">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
         </li>
       </ul>
     </section>
-    <section class="site-content__news news">
-      <h2 class="news__title">Новости</h2>
-      <ul class="news__list">
-        <li class="news__item news-item">
-          <p class="news-item__preview">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
-          </p>
-          <time class="news-item__time" datetime="2018-01-11">11 января</time>
-        </li>
-        <li class="news__item news-item">
-          <p class="news-item__preview">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-          <time class="news-item__time" datetime="2018-01-18">18 января</time>
-        </li>
-        <a href="news.html" class="news__button news__button--all-news">Все новости</a>
-      </ul>
-    </section>
-    <section class="site-content__gallery gallery">
-      <h2 class="gallery__title">Фотогалерея</h2>
-      <figure class="gallery__content gallery-content">
-        <a class="gallery-content__link" href="#">
-          <img class="gallery-content__img" src="img/gallery/gallery-img-1.jpg" width="286" height="164" alt="Интерьер">
-        </a>
-      </figure>
-      <span class="gallery__button gallery__button--back button">Назад</span>
-      <span class="gallery__button gallery__button--forward button">Вперед</span>
-    </section>
-    <section class="site-content__contacts contacts">
-      <h2 class="contacts__title">Контактная информация</h2>
-      <p class="contacts__descr">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-        ТЕЛЕФОН: +7 (495) 666-02-66</p>
-      <p class="contacts__worktime">ВРЕМЯ РАБОТЫ:<br>
-        ПН—ПТ: С 10:00 ДО 22:00<br>
-        СБ—ВС: С 10:00 ДО 19:00</p>
-      <a class="contacts__button contacts__button--map button" href="map.html">Как проехать</a>
-      <a class="contacts__button contacts__button--feedback button" href="contacts.html">Обратная связь</a>
-    </section>
-    <section class="site-content__make-order make-order">
-      <h2 class="make-order__title">Записаться</h2>
-      <p class="make-order__descr">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-      <form class="make-order__form" action="">
-        <label class="make-order__label" for="date">Дата</label>
-        <input class="make-order__input make-order__input--date" id="date" type="text" name="date">
-        <label class="make-order__label" for="time">Время</label>
-        <input class="make-order__input make-order__input--time" id="time" type="text" name="time">
-        <label class="make-order__label" for="name">Ваше имя</label>
-        <input class="make-order__input make-order__input--name" id="name" type="text" name="name">
-        <label class="make-order__label" for="phone">Телефон</label>
-        <input class="make-order__input make-order__input--phone" id="phone" type="phone" name="phone">
-        <button class="make-order__button make-order__button--submit button" type="submit">Записаться</button>
-      </form>
-    </section>
+
+    <div class="site-content__container container">
+      <section class="site-content__news news">
+        <h2 class="news__title">Новости</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <p class="news__item-preview">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+            </p>
+            <time class="news__item-time" datetime="2018-01-11">11 января</time>
+          </li>
+          <li class="news__item">
+            <p class="news__item-preview">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+            <time class="news__item-time" datetime="2018-01-18">18 января</time>
+          </li>
+          <a href="news.html" class="news__button button">Все новости</a>
+        </ul>
+      </section>
+      <section class="site-content__gallery gallery">
+        <h2 class="gallery__title">Фотогалерея</h2>
+        <figure class="gallery__item">
+          <a class="gallery__item-link" href="#">
+            <img class="gallery__item-img" src="img/gallery/gallery-img-1.jpg" width="286" height="164" alt="Интерьер">
+          </a>
+        </figure>
+        <button class="gallery__button button" type="button">Назад</button>
+        <button class="gallery__button button" type="button">Вперед</button>
+      </section>
+    </div>
+    <div class="site-content__container container">
+      <section class="site-content__contacts contacts">
+        <h2 class="contacts__title">Контактная информация</h2>
+        <p class="contacts__descr">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+          ТЕЛЕФОН: +7 (495) 666-02-66</p>
+        <p class="contacts__worktime">ВРЕМЯ РАБОТЫ:<br>
+          ПН—ПТ: С 10:00 ДО 22:00<br>
+          СБ—ВС: С 10:00 ДО 19:00</p>
+        <a class="contacts__button button" href="map.html">Как проехать</a>
+        <a class="contacts__button button" href="contacts.html">Обратная связь</a>
+      </section>
+      <section class="site-content__make-order make-order">
+        <h2 class="make-order__title">Записаться</h2>
+        <p class="make-order__descr">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+        <form class="make-order__form" action="">
+          <label class="make-order__label" for="date">Дата</label>
+          <input class="make-order__input" id="date" type="text" name="date" placeholder="08.10.2017">
+          <label class="make-order__label" for="time">Время</label>
+          <input class="make-order__input" id="time" type="text" name="time" placeholder="10:00">
+          <label class="make-order__label" for="name">Ваше имя</label>
+          <input class="make-order__input" id="name" type="text" name="name" placeholder="Борода">
+          <label class="make-order__label" for="phone">Телефон</label>
+          <input class="make-order__input" id="phone" type="phone" name="phone" placeholder="+7 123 456-78-90">
+          <button class="make-order__button button" type="submit">Записаться</button>
+        </form>
+      </section>
+    </div>
   </main>
   <footer class="site-footer">
     <p class="site-footer__contacts contacts">
@@ -140,7 +148,7 @@
     </div>
     <p class="site-footer__develop-info develop-info">
       <b class="develop-info__title">Разработано:</b>
-      <a class="develop-info__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>
+      <a class="develop-info__button button " href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>
     </p>
   </footer>
 
@@ -148,12 +156,34 @@
     <div class="site-modals__modal modal modal--login">
       <h2 class="modal__title">Личный кабинет</h2>
       <p class="modal__descr">Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <span class="modal__button modal__button--close button visually-hidden">Закрыть</span>
+
+      <form class="modal__form login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="login-form__label visually-hidden" for="user-login">Логин</label>
+          <input class="login-form__input" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="login-form__label visually-hidden" for="user-password">Пароль</label>
+          <input class="login-form__input" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <label class="login-form__label">
+            <input class="login-form__checkbox visually-hidden" type="checkbox" name="remember">
+            <span class="login-form__checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="login-form__restore-link" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="login-form__button button button--submit" type="submit">Войти</button>
+      </form>
+      <span class="modal__button button button--close visually-hidden">Закрыть</span>
     </div>
     <div class="site-modals__modal modal modal--map">
       <h2 class="modal__title visually-hidden">Как до нас добраться</h2>
-      <span class="modal__button modal__button--close button visually-hidden">Закрыть</span>
+      <p class="modal__descr">
+        <img class="modal__map" src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <span class="modal__button button button--close visually-hidden">Закрыть</span>
     </div>
   </section>
 </body>

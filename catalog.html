@@ -4,12 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Средства для ухода</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner-page">
   <header class="site-header">
     <nav class="site-header__main-nav main-nav">
-      <a class="main-nav__logo logo" href="index.html">
+      <a class="site-header__logo logo" href="index.html">
         <img class="logo__img" src="img/logo/logo.svg" alt="Логотип барбершопа «Бородинский»" width="111" height="24">
       </a>
       <ul class="site-header__main-menu main-menu">
@@ -59,20 +62,29 @@
         <form class="products-filter__form" action="" method="get">
           <fieldset class="products-filter__fieldset">
             <legend class="products-filter__legend">Производители:</legend>
-            <label class="products-filter__label"><input class="products-filter__checkbox products-filter__checkbox--checked" type="checkbox" name="vendor" checked>Baxter of California</label>
-            <label class="products-filter__label"><input class="products-filter__checkbox " type="checkbox" name="vendor">Mr Natty</label>
-            <label class="products-filter__label"><input class="products-filter__checkbox products-filter__checkbox--checked" type="checkbox" name="vendor" checked>Suavecito</label>
-            <label class="products-filter__label"><input class="products-filter__checkbox " type="checkbox" name="vendor">Malin+Goetz</label>
-            <label class="products-filter__label"><input class="products-filter__checkbox " type="checkbox" name="vendor">Murray’s</label>
-            <label class="products-filter__label"><input class="products-filter__checkbox products-filter__checkbox--checked" type="checkbox" name="vendor" checked>American Crew</label>
+            <input class="products-filter__checkbox products-filter__checkbox--checked" id="1" type="checkbox" name="vendor" checked>
+            <label class="products-filter__label" for="1">Baxter of California</label>
+            <input class="products-filter__checkbox " id="2" type="checkbox" name="vendor">
+            <label class="products-filter__label" for="2">Mr Natty</label>
+            <input class="products-filter__checkbox products-filter__checkbox--checked" id="3" type="checkbox" name="vendor" checked>
+            <label class="products-filter__label" for="3">Suavecito</label>
+            <input class="products-filter__checkbox " id="4" type="checkbox" name="vendor">
+            <label class="products-filter__label" for="4">Malin+Goetz</label>
+            <input class="products-filter__checkbox " id="5" type="checkbox" name="vendor" disabled>
+            <label class="products-filter__label" for="5">Murray’s</label>
+            <input class="products-filter__checkbox products-filter__checkbox--checked" id="6" type="checkbox" name="vendor" checked>
+            <label class="products-filter__label" for="6">American Crew</label>
           </fieldset>
           <fieldset class="products-filter__fieldset">
             <legend class="products-filter__legend">Группы товаров:</legend>
-            <label class="products-filter__label"><input class="products-filter__radio" type="radio" name="product_group">Бритвенные принадлежности</label>
-            <label class="products-filter__label"><input class="products-filter__radio products-filter__radio--checked" type="radio" name="product_group" checked>Средства для ухода</label>
-            <label class="products-filter__label"><input class="products-filter__radio" type="radio" name="product_group">Аксессуары</label>
+            <input class="products-filter__radio" id="7" type="radio" name="product_group">
+            <label class="products-filter__label" for="7">Бритвенные принадлежности</label>
+            <input class="products-filter__radio products-filter__radio--checked" id="8" type="radio" name="product_group" checked>
+            <label class="products-filter__label" for="8">Средства для ухода</label>
+            <input class="products-filter__radio" id="9" type="radio" name="product_group">
+            <label class="products-filter__label" for="9">Аксессуары</label>
           </fieldset>
-          <button class="products-filter__button products-filter__button--submit" type="submit">Показать</button>
+          <button class="products-filter__button products-filter__button--submit button" type="submit">Показать</button>
         </form>
       </section>
       <div class="site-content__container">
@@ -150,16 +162,16 @@
         <section class="site-content__products-pagination products-pagination">
           <h2 class="products-pagination__title visually-hidden">Навигация по страницам</h2>
           <ul class="products-pagination__list">
-            <li class="products-pagination__item products-pagination__item--first">
+            <li class="products-pagination__item">
               <a class="products-pagination__link" href="#">1</a>
             </li>
             <li class="products-pagination__item products-pagination__item--current">
               <a class="products-pagination__link">2</a>
             </li>
-            <li class="products-pagination__item products-pagination__item products-pagination__item--next">
+            <li class="products-pagination__item products-pagination__item">
               <a class="products-pagination__link" href="#">3</a>
             </li>
-            <li class="products-pagination__item products-pagination__item--last">
+            <li class="products-pagination__item">
               <a class="products-pagination__link" href="#">4</a>
             </li>
           </ul>
@@ -200,7 +212,7 @@
     </div>
     <p class="site-footer__develop-info develop-info">
       <b class="develop-info__title">Разработано:</b>
-      <a class="develop-info__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>
+      <a class="develop-info__button button " href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>
     </p>
   </footer>
 
